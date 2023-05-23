@@ -11,13 +11,13 @@
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
 
-# letter = input('Please enter a letter from the alphabet (a-z or A-Z):\n')
-# letter = letter.lower()
+letter = input('Please enter a letter from the alphabet (a-z or A-Z):\n')
+letter = letter.lower()
 
-# if letter in 'aeiou':
-#     print(f'The letter {letter} is a vowel')
-# else:
-#     print(f'The letter {letter} is a consonant')
+if letter in 'aeiou':
+    print(f'The letter {letter} is a vowel')
+else:
+    print(f'The letter {letter} is a consonant')
 
 
 # exercise-02 Length of Phrase
@@ -29,13 +29,13 @@
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 
-# while True:
-#     phrase = input('Please enter a word or phrase:\n')
+while True:
+    phrase = input('Please enter a word or phrase:\n')
 
-#     if phrase == 'quit':
-#         break
+    if phrase == 'quit':
+        break
 
-#     print(f'What you entered is {len(phrase)} characters long')
+    print(f'What you entered is {len(phrase)} characters long')
 
 # exercise-03 Calculate Dog Years
 
@@ -52,14 +52,14 @@
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
-# dog_age = int(input("Input a dog's age:\n"))
+dog_age = int(input("Input a dog's age:\n"))
 
-# if dog_age < 3:
-#     dog_years = dog_age * 10
-# else:
-#     dog_years = 20 + (dog_age - 2) * 7
+if dog_age < 3:
+    dog_years = dog_age * 10
+else:
+    dog_years = 20 + (dog_age - 2) * 7
 
-# print(f"The dog's age in dog years is {dog_years}")
+print(f"The dog's age in dog years is {dog_years}")
 
 # exercise-04 What kind of Triangle?
 
@@ -76,17 +76,17 @@
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
-# print("Enter the lengths of three sides of a triangle:")
-# a = int(input('a:\n'))
-# b = int(input('b:\n'))
-# c = int(input('c:\n'))
+print("Enter the lengths of three sides of a triangle:")
+a = int(input('a:\n'))
+b = int(input('b:\n'))
+c = int(input('c:\n'))
 
-# if a == b == c:
-#     print(f"A triangle with sides of {a}, {b}, {c} is an equilateral triangle")
-# elif a != b and a != c and b != c:
-#     print(f"A triangle with sides of {a}, {b}, {c} is a scalene triangle")
-# else:
-#     print(f"A triangle with sides of {a}, {b}, {c} is an isosceles triangle")
+if a == b == c:
+    print(f"A triangle with sides of {a}, {b}, {c} is an equilateral triangle")
+elif a != b and a != c and b != c:
+    print(f"A triangle with sides of {a}, {b}, {c} is a scalene triangle")
+else:
+    print(f"A triangle with sides of {a}, {b}, {c} is an isosceles triangle")
 
 # exercise-05 Fibonacci sequence for first 50 terms
 
@@ -106,12 +106,12 @@
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 
-# term1, term2 = 0, 1
-# print("term: 0 / number: 0")
+term1, term2 = 0, 1
+print("term: 0 / number: 0")
 
-# for term in range(1, 50):
-#     print(f"term: {term} / number: {term2}")
-#     term1, term2 = term2, term1 + term2
+for term in range(1, 50):
+    print(f"term: {term} / number: {term2}")
+    term1, term2 = term2, term1 + term2
 
 # exercise-06 What's the Season?
 
